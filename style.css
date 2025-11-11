@@ -176,6 +176,7 @@ body {
     }
     .row{
         padding: 5px 10px !important;
+        /* border:1px solid black !important; */
     }
 
     img{
@@ -189,10 +190,12 @@ body {
         font-size: 1rem !important;
     }
     .container .ratings{
-        gap: 15px !important;
+        gap: 5px !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
     .container .rating{
-        padding: 10px 15px !important;
+        padding: 5px 10px !important;
     }
     .edit-circle{
         width: 20px !important;
