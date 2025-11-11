@@ -190,12 +190,15 @@ body {
         font-size: 1rem !important;
     }
     .container .ratings{
-        gap: 5px !important;
+        gap: 2px !important;
         align-items: center !important;
         justify-content: center !important;
     }
     .container .rating{
-        padding: 5px 10px !important;
+        padding: 10px !important;
+    }
+    .rating h3{
+        font-size: 1rem !important;
     }
     .edit-circle{
         width: 20px !important;
