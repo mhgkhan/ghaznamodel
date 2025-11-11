@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 500px;
+    border-radius: 12px;
+    border: 3px solid white;
+    padding: 10px;
+    backdrop-filter: 10px;
+    box-shadow: 0px 0px 17px 0px #b5b5b5;
+    background: #f1e9e97a;
+}
+
+.container .model {
+    width: 100%;
+    height: 100%;
+}
+
+.container .model .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin: 1rem 0px;
+    padding: 0px 20px;
+}
+
+.container .model .header .data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container .model .header .data img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #333;
+}
+
+.container .model .header .data h2 {
+    font-size: 2.5rem;
+    /* margin-bottom: 5px; */
+    text-align: center;
+}
+
+.container .model .header .data h4 {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+}
+
+.container .model .header .edit-circle-container{
+    border-radius: 50%;
+    background-color: white;
+    padding: 15px;
+}
+
+.container .model .header .edit-circle {
+    width: 30px;
+    height: 30px;
+    /* border-radius: 50%; */
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container .model .header .edit-circle span {
+    font-size: 1.5rem;
+    transform: rotate(128deg);
+    margin-right: -20px;
+    margin-top: -20px;
+    background: white;
+}
+
+.container .model .tags {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: start;
+    margin-left: 1rem;
+}
+
+.container .model .tags .tag {
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container .model .ratings {
+    justify-content: center;
+    gap: 30px;
+    margin: 10px;
+}
+
+.container .model .ratings .rating {
+    padding: 5px 20px;
+    border-right: 1px solid black;
+}
+.container .model .rating h3{
+    font-size: 1.5rem;
+}
+
+.container .model .ratings .rating:last-child {
+    border: none;
+}
+
+.container .model .footer {
+    margin-top: 2rem;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container .model .footer button {
+    width: 70%;
+    padding: 10px;
+    border-radius: 500px;
+    font-size: 1.1rem;
+    background: black;
+    color: white;
+}
+
+.container .model .footer .analytics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* width: 30%; */
+}
+
+.container .model .footer .analytics span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid gray;
+    padding: 15px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+
+
+@media screen and (max-width:500px) {
+    html{
+        font-size: 80%;
+    }
+    .container {
+        width: 350px
+    }
+
+    img{
+        width: 60px !important;
+        height: 60px !important;
+    }
+    h2{
+        font-size: 1.8rem !important;
+    }
+    h4{
+        font-size: 1rem !important;
+    }
+    .container .ratings{
+        gap: 15px !important;
+    }
+    .container .rating{
+        padding: 10px 15px !important;
+    }
+    .edit-circle{
+        width: 20px !important;
+        height: 20px !important;
+    }
+    .edit-circle span{
+        margin-bottom: -10px;
+        margin-right: -8px !important;
+        background: none !important;
+    }
+}
